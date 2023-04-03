@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/image/apple-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/font.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <title>Zay Shop</title>
+  </head>
+  <!-- <body> -->
+  <body>
+
+    <!-- start header nav -->
+    <header>
+      <nav>
+        <div class="container">
+          <div class="navbar">
+            <div class="navbar__menu">
+              <a class="shop-name" href="">Zay</a>
+              <ul class="menu__list">
+                <ul>
+                  <li class="menu__item"><a href="index.html">Home</a></li>
+                  <li class="menu__item"><a href="about.html">About</a></li>
+                  <li class="menu__item"><a href="#">Shop</a></li>
+                  <li class="menu__item"><a href="contact.html">Contact</a></li>
+                </ul>
+                <li class="menu__last-item">
+                  <div class="search-box">
+                    <input type="text" placeholder="Search..." />
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <span class="shopping-cart-icon">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="quantity-cart"></span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="hamberger-menu">
+              <span><i class="fa fa-bars"></i></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header nav -->
+
+    <!-- start search modal -->
+    <div class="search-modal">
+      <div class="search-modal__item">
+        <div class="search-modal__close"><i class="fa fa-close"></i></div>
+        <div class="search-box">
+          <input class="search-input" type="text" placeholder="Search..." />
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+      <div class="search-modal-back-dray"></div>
+    </div>
+    <!-- end search modal -->
+
+    <!-- start shopping cart modal -->
+    <div class="modal-cart">
+      <div class="modal__item">
+        <span><i class="fa fa-close close-cart"></i></span>
+
+        <div class="empty-cart">
+          <p>Your Cart Is Empty</p>
+          <img src="./assets/image/cart-icon.png" alt="cart icon" />
+        </div>
+
+        <div class="modal-cart-inner"></div>
+        <div class="modal-btn">
+          <p></p>
+          <div>
+            <div>
+              <button class="btn btn-secondry clear-all">Clear All</button>
+              <a href="buy.html" class="modal-buy-link">
+                <button class="btn btn-primary buy-btn">buy</button>
+              </a>
+            </div>
+            <p class="error"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-cart-back-dray"></div>
+    <!-- end shopping cart modal -->
+
+    <!-- start paroducts -->
+    <div class="shop">
+      <div class="container">
+        <div class="products-page">
+          <div class="categories-filter">
+            <!-- <div> -->
+            <h2>Categories</h2>
+            <div class="gender-categories">
+              <div class="header-categories-filter">
+                <h3>Gender</h3>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="body-categories-filter">
+                <p data-key="gender" data-value="Men" class="gender">Men</p>
+                <p data-key="gender" data-value="Women" class="gender">Women</p>
+              </div>
+            </div>
+            <div class="type-categories">
+              <div class="header-categories-filter">
+                <h3>Product</h3>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="body-categories-filter"></div>
+            </div>
+            <div class="sale-categories">
+              <div class="header-categories-filter">
+                <h3>Sale</h3>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="body-categories-filter"></div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="product-card">
+            <div class="product-filter">
+              <div class="filtered">
+                <div>
+                  <span data-key="filter" data-value="all" class="gender active"
+                    >All</span
+                  >
+                  <span data-key="gender" data-value="Men" class="gender"
+                    >Men's</span
+                  >
+                  <span data-key="gender" data-value="Women" class="gender"
+                    >Women's</span
+                  >
+                </div>
+                <div class="select-box">
+                  <select name="size" data-key="size">
+                    <option value="" disabled selected hidden>
+                      FILTER SIZE
+                    </option>
+
+                    <option value="">ALL</option>
+                  </select>
+
+                  <select name="sort" data-key="sort">
+                    <option value="" disabled selected hidden>SORT</option>
+
+                    <option value="">ALL</option>
+                    <option value="PRICE (HIGH - LOW)">
+                      PRICE (HIGH - LOW)
+                    </option>
+                    <option value="PRICE (LOW - HIGH)">
+                      PRICE (LOW - HIGH)
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="card"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end paroducts -->
+
+    <!-- start about Our Brands -->
+    <div class="our-brands">
+      <div class="container">
+        <div class="brands">
+          <div class="header-brands">
+            <h2>Our Brands</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="body-brands">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="./assets/image/brand_01.png" alt="brand image" />
+                  <img src="./assets/image/brand_02.png" alt="brand image" />
+                  <img src="./assets/image/brand_03.png" alt="brand image" />
+                  <img src="./assets/image/brand_04.png" alt="brand image" />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about Our Brands -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="main-footer">
+        <div class="container block">
+          <div class="footer-link">
+            <div class="footer-contact">
+              <h2>Zay Shop</h2>
+              <a
+                href="https://www.google.com/maps/place/%D8%A8%D9%87%D8%B4%D9%87%D8%B1%D8%8C+%D8%A7%D8%B3%D8%AA%D8%A7%D9%86+%D9%85%D8%A7%D8%B2%D9%86%D8%AF%D8%B1%D8%A7%D9%86%D8%8C+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%E2%80%AD/@36.7111917,53.5744514,13z/data=!3m1!4b1!4m5!3m4!1s0x3f84c34aadd553d1:0x53ffb49016ada071!8m2!3d36.6987017!4d53.5422337"
+              >
+                <i class="fa fa-map-marker"></i>
+                <span>Behshahr, Mazandaran Province</span>
+              </a>
+              <a href="tel:09399146933">
+                <i class="fa fa-phone"></i>
+                <span>0939-914-6933</span>
+              </a>
+              <a href="mailto:ahmadkarimigorji@yahoo.com">
+                <i class="fa fa-envelope"></i>
+                <span>ahmadkarimigorji@yahoo.com</span>
+              </a>
+            </div>
+
+            <div class="footer-products">
+              <h2>Products</h2>
+              <a href="#">Luxury</a>
+              <a href="#">sport wear</a>
+              <a href="#">Men's Shoes</a>
+              <a href="#">Women's Shoes</a>
+              <a href="#">Popular Dress</a>
+              <a href="#">Gym Accessories</a>
+              <a href="#">Sport Shoes</a>
+            </div>
+
+            <div class="footer-further">
+              <h2>Further Info</h2>
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="#">Shop Locations</a>
+              <a href="#">FAQs</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div class="footer-social">
+            <div class="footer-icon">
+              <a href=""
+                ><span><i class="fa fa-facebook"></i></span
+              ></a>
+              <a href=""
+                ><span><i class="fa fa-instagram"></i></span
+              ></a>
+              <a href=""
+                ><span><i class="fa fa-twitter"></i></span
+              ></a>
+              <a href=""
+                ><span><i class="fa fa-linkedin"></i></span
+              ></a>
+            </div>
+            <div class="footer-email">
+              <div>
+                <input type="email" placeholder="Email address" />
+                <span>Subscribe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script type="module" src="js/shopPage.js"></script>
+  </body>
+</html>
