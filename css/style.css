@@ -918,7 +918,7 @@ body ::-webkit-scrollbar-thumb {
   justify-content: center;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   grid-gap: 2rem 2.5rem;
   padding-top: 2.5rem;
 }
@@ -1008,10 +1008,6 @@ body ::-webkit-scrollbar-thumb {
   }
 }
 @media screen and (min-width: 768px) {
-  .body-services {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
-    grid-gap: 3rem 2.5rem;
-  }
   .body-services > div {
     min-height: 180px;
   }
@@ -1029,10 +1025,6 @@ body ::-webkit-scrollbar-thumb {
   }
 }
 @media screen and (min-width: 1024px) {
-  .body-services {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 260px));
-    grid-gap: 2rem 2.5rem;
-  }
   .our-brands img {
     width: 17%;
     margin: 0 2rem;
